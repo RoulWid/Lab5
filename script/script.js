@@ -1,0 +1,20 @@
+const inputBox = document.getElementById("input-box");
+const listContainer = document.getElementById("list-container");
+
+document.querySelector('input').maxLength = 25;
+
+function addTask(){
+    if(inputBox.value == ''){
+        alert("Вы должны что-нибудь написать!");
+    }
+    else{
+        let li = document.createElement("li");
+        li.innerHTML = inputBox.value;
+        listContainer.appendChild(li);
+        let span = document.createElement("span");
+        span.innerHTML = "\u00d7"
+        li.appendChild(span);
+    }
+    inputBox.value = "";
+    saveData();
+}
