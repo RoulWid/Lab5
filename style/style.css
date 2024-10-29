@@ -4,3 +4,9 @@
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
 }
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(120deg,#222dcc, #9c27ac);
+    padding: 1rem;
+}
